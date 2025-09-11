@@ -1,4 +1,4 @@
-# SHOW REPLICA STATUS
+# SHOW SLAVE | REPLICA STATUS
 
 ## Syntax
 
@@ -14,15 +14,15 @@ SHOW ALL { REPLICAS | SLAVES } STATUS
 
 ## Description
 
-This statement is to be run on a replica and provides status information on essential parameters of the [replica](../../../../ha-and-performance/standard-replication/replication-overview.md) threads.
+This statement is to be run on a slave|replica and provides status information on essential parameters of the [replica](../../../../ha-and-performance/standard-replication/replication-overview.md) threads.
 
 {% tabs %}
 {% tab title="Current" %}
-This statement requires the [REPLICA MONITOR](../../account-management-sql-statements/grant.md#replica-monitor) privilege.
+This statement requires the [SALVE | REPLICA MONITOR](../../account-management-sql-statements/grant.md#replica-monitor) privilege.
 {% endtab %}
 
 {% tab title="< 10.5.9" %}
-This statement requires the [REPLICA MONITOR](../../account-management-sql-statements/grant.md#replica-monitor) privilege.
+This statement requires the [SLAVE | REPLICA MONITOR](../../account-management-sql-statements/grant.md#replica-monitor) privilege.
 {% endtab %}
 
 {% tab title="< 10.5.2" %}
@@ -36,7 +36,7 @@ The `ALL` and `"connection_name"` options allow you to connect to [many primarie
 
 {% tabs %}
 {% tab title="Current" %}
-`ALL REPLICAS` gives you a list of all connections to the primary nodes.
+`ALL REPLICAS` or 'ALL SLAVES' gives you a list of all connections to the primary nodes.
 {% endtab %}
 
 {% tab title="< 10.5.1" %}
