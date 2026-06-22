@@ -195,6 +195,12 @@ What exactly is a vector in AI and RAG (1 minute • 2026)
 {% endcolumn %}
 {% endcolumns %}
 
+## Vector hardware optimization
+Vector hardware optimization are done for the following cpu's:
+* Intel and AMD CPU's supporting the AVX-512 instruction set
+* Arm Neon CPU's
+* POWERPC
+
 ## See Also
 
 * [MariaDB Vector: How it works](https://mariadb.org/mariadb-vector-how-it-works/) (blog post • 5 minutes • 2026)
